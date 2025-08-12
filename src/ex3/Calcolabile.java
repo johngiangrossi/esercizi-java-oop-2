@@ -5,5 +5,6 @@ public interface Calcolabile {
     // metodi
     public int calcola();
 
-    public void stampaArea();
+    
+    //public void stampaArea();
 }

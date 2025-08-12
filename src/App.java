@@ -1,3 +1,5 @@
+import ex5.Utente;
+import java.time.LocalDate;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -12,7 +14,16 @@ public class App {
         
         p.stampaIngredienti();
         */
-         
+
+        // ex1b
+        /*
+        PizzaArray pizza1 = new PizzaArray();
+        System.out.println(pizza1.getIngredienti());
+
+        PizzaArray p = new PizzaArray().aggiungiMozzarella().aggiungiPomodoro();
+        System.out.println(p.getIngredienti());
+        */
+
         // ex2
         /*
         Studente studente1 = new Studente("Mario", 123456);
@@ -20,6 +31,20 @@ public class App {
         Corso corso1 = new Corso("matematica");
         
         corso1.iscrivi(studente1);
+        */
+        // ex2b
+        /*
+        Studente studente1 = new Studente("Mario", 123456);
+        
+        CorsoArray corso1 = new CorsoArray("matematica");
+        
+        corso1.iscrivi(studente1);
+        
+        Studente studente2 = new Studente("Francesco", 14560);
+        corso1.iscrivi(studente2);
+        
+        Studente studente3 = new Studente("Marco", 14546560);
+        corso1.iscrivi(studente3);
         */
         
         // ex3
@@ -30,6 +55,15 @@ public class App {
         figura = new Rettangolo(2, 3);
         figura.stampaArea();
         */
+
+        // ex3b
+        /*
+        Calcolabile figura = new Quadrato(5);
+        UsaCalcolabile.stampaCalcolabile(figura);
+        
+        figura = new Rettangolo(2, 3);
+        UsaCalcolabile.stampaCalcolabile(figura);
+        */
         
         // ex4
         /*
@@ -38,11 +72,21 @@ public class App {
         */
 
         // ex5
-        /*
-        Utente utente1 = new Utente().setEmail("mario.rossi1").setNome("mario");
-        // utente1.setEmail("mario.rossi1").setNome("mario");
+        LocalDate LD = LocalDate.now();
+        System.out.println("la data di oggi è: " + LD);
+
+        LD = LocalDate.of(2000, 5, 17);
+
+        Utente utente1 = new Utente().setEmail("mario.rossi1").setNome("mario").setDataNascita(LD);
+        // utente1.setEmail("mario.rossi1").setNome("mario").setDataNascita(LD);
         utente1.stampa();
-        */
+
+        LD = LD.plusDays(10);
+        System.out.println("aggiungo 10 giorni alla data quindì sarà: " + LD);
+
+        LD = LD.plusMonths(5);
+        System.out.println("aggiungo 5 mesi alla data quindì sarà: " + LD);
+
 
         // ex6
         /*

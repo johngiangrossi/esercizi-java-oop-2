@@ -19,5 +19,11 @@ public class Corso {
     public String getNomeCorso() {
         return nomeCorso;
     }
+
+    // setters
+    public void setNomeCorso(String nomeCorso) {
+        this.nomeCorso = nomeCorso;
+    }
+    
     
 }

@@ -18,9 +18,11 @@ public class Rettangolo implements Calcolabile {
         return base * altezza;
     }
 
+    /*
     @Override
     public void stampaArea() {
         System.out.println("area del rettangolo è: " + this.calcola());
     }
+    */
     
 }

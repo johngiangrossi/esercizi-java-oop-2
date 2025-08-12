@@ -24,8 +24,11 @@ public class Quadrato implements Calcolabile {
         return (int) Math.pow(lato, 2);
     }
 
+    /*
     @Override
     public void stampaArea() {
         System.out.println("area del quadrato è: " + this.calcola());
     }
+    */
+
 }

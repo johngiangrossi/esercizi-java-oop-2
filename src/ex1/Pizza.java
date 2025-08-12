@@ -14,6 +14,7 @@ public class Pizza {
 
     // fields
     private String ingredienti;
+    
 
     
     // costruttore
@@ -43,7 +44,7 @@ public class Pizza {
 
     // stampo gli ingredienti
     public void stampaIngredienti() {
-        if (ingredienti == "") {
+        if ("".equals(ingredienti)) {
             System.out.println("la pizza è vuota");
         } else {
             System.out.print("gli ingredienti della pizza sono: " + ingredienti);

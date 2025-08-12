@@ -8,11 +8,14 @@
 
 package ex5;
 
+import java.time.LocalDate;
+
 public class Utente {
 
     // fields
     private String nome;
     private String email;
+    private LocalDate dataNascita;
 
     // costruttore
     public Utente() {
@@ -29,7 +32,12 @@ public class Utente {
         return this;
     };
 
+    public Utente setDataNascita(LocalDate dataNascita) {
+        this.dataNascita = dataNascita;
+        return this;
+    }
+
     public void stampa() {
-        System.out.println("il nome utente è: " + nome + "\nl'email è: " + email);
+        System.out.println("il nome utente è: " + nome + "\nl'email è: " + email + "\nnato il: " + dataNascita);
     }
 }

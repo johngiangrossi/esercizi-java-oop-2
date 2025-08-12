@@ -29,6 +29,16 @@ public class Studente {
     public int getMatricola() {
         return matricola;
     }
+
+    // setters
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setMatricola(int matricola) {
+        this.matricola = matricola;
+    }
+    
     
     
 }
